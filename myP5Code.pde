@@ -5,7 +5,16 @@ void setup(){
 
 //🟢Draw Function - Runs on Repeat
 draw = function(){  
-  background(255, 255, 255);
-  fill(255, 0, 255);
-  ellipse(36, 45, 12, 12); 
+  //background(255, 255, 255);
+  fill(mouseX, 0, mouseY);
+  var label = mouseX + "," + mouseY;
+  ellipse(mouseX, mouseY, 12, 12); 
+
+  text(label, mouseX, mouseY);
+  
+  
+
+  
+
 };
+
